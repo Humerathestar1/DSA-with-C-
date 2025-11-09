@@ -1,0 +1,18 @@
+
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    int num[] = {25,67,89,-22,-78};
+    int size = 5;
+    int smallest = INT_MAX;
+    for(int i = 0;i<size;i++){
+        if(num[i]<smallest){
+            smallest = num[i];
+        }
+    }
+    cout << "The smallest no of an array is"<<smallest;
+
+    return 0;
+}
